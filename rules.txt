@@ -1,0 +1,25 @@
+#Rules for tokenization
+
+#Words - any combination of letters, including hyphens
+
+#Words in which all letters are capitalized
+UPPERCASE_LETTER (UPPERCASE_LETTER|DASH_PUNCTUATION)* 
+
+#Other words
+LETTER (LETTER|DASH_PUNCTUATION)*
+
+#Number - any combination of digits
+#(DECIMAL_DIGIT_NUMBER)+
+
+##Whitespace
+SPACE_SEPARATOR
+
+#Punctuation
+#SINGLE_QUOTATION_MARK|DOUBLE_QUOTATION_MARK
+LEFT_PARENTHESIS
+RIGHT_PARENTHESIS
+#DASH_PUNCTUATION|CONNECTOR_PUNCTUATION|OTHER_PUNCTUATION
+
+
+#Symbol - any non-space character
+SYMBOL
